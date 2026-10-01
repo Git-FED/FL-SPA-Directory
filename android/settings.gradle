@@ -1,0 +1,23 @@
+// FED-SPA Android - repository-level Gradle settings.
+// Single module, plain Gradle (no dependency catalogs, no buildSrc).
+// Everything is built with the Android SDK + Kotlin stdlib only -
+// no third-party libraries, per project rules.
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "FED-SPA"
+include(":app")

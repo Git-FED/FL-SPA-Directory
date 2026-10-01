@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FED-SPA</string>
+    <string name="app_tagline">Florida Establishment Directory \u2014 Spa &amp; Parlor Assurance</string>
+
+    <!-- search / tabs -->
+    <string name="search_hint">Search name, license, city, county…</string>
+    <string name="tab_licensed">Licensed</string>
+    <string name="tab_unlicensed">Unlicensed watchlist</string>
+
+    <!-- status filter (index order must match R.array.status_filter_options) -->
+    <string-array name="status_filter_options">
+        <item>All statuses</item>
+        <item>Clear</item>
+        <item>Active</item>
+        <item>Delinquent</item>
+        <item>Expired</item>
+        <item>Inactive</item>
+        <item>Probation</item>
+    </string-array>
+
+    <!-- list / detail -->
+    <string name="empty_list">No establishments match that search.</string>
+    <string name="license_prefix">License %1$s</string>
+    <string name="unlicensed_badge">Unlicensed</string>
+
+    <!-- subscriber -->
+    <string name="code_hint">Subscriber code</string>
+    <string name="unlock">Unlock</string>
+    <string name="lock">Lock watchlist</string>
+    <string name="unlock_empty">Enter your subscriber code first.</string>
+    <string name="unlock_failed">That code didn\u2019t decrypt the watchlist.</string>
+    <string name="no_envelope">No watchlist file is bundled with this build.</string>
+    <string name="subscriber_locked_hint">Unlock the watchlist first (enter your subscriber code below).</string>
+
+    <!-- settings -->
+    <string name="title_settings">Settings</string>
+    <string name="settings_section_code">Subscriber code</string>
+    <string name="settings_code_desc">The unlicensed watchlist is encrypted. Subscribers receive a code that decrypts it on this device \u2014 no account, no backend.</string>
+    <string name="settings_remember">Remember my code</string>
+    <string name="settings_code_hint">Paste your subscriber code</string>
+    <string name="settings_saved">Saved</string>
+    <string name="settings_wiped">Cleared. Nothing is stored anymore.</string>
+    <string name="settings_need_code">Enter a subscriber code first, or turn off \u201CRemember my code\u201D.</string>
+    <string name="settings_storage_note">Stored unencrypted on this device only (SharedPreferences). Nothing is ever transmitted.</string>
+    <string name="settings_section_data">About data</string>
+    <string name="settings_no_data">Bundled data file missing or unreadable.</string>
+    <string name="settings_data_version">Data version: v%1$d</string>
+    <string name="settings_data_as_of">Data as of: %1$s</string>
+    <string name="settings_data_count">Licensed establishments: %1$d</string>
+    <string name="settings_data_freq">Update frequency: annual</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+</resources>

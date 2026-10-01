@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Car palette: same brand, higher contrast variants. -->
+    <color name="auto_bg">#05070C</color>
+    <color name="auto_raised">#131824</color>
+    <color name="auto_accent">#2DD4A7</color>
+    <color name="auto_text">#FFFFFF</color>
+    <color name="auto_text_muted">#C7CEDA</color>
+    <color name="auto_text_faint">#8A94A6</color>
+</resources>

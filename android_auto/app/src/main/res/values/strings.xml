@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FED-SPA Auto</string>
+    <string name="auto_title">Licensed Massage Establishments</string>
+    <string name="auto_search_hint">Name, license, or city</string>
+    <string name="auto_empty">No matches. Keep eyes on the road.</string>
+</resources>

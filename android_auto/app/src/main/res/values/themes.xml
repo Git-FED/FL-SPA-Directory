@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AutoTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/auto_bg</item>
+        <item name="android:statusBarColor">@color/auto_bg</item>
+        <item name="colorAccent">@color/auto_accent</item>
+        <item name="android:textColorPrimary">@color/auto_text</item>
+        <item name="android:textColorSecondary">@color/auto_text_muted</item>
+    </style>
+</resources>

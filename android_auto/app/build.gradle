@@ -1,0 +1,55 @@
+// FED-SPA Android Auto module - minimal.
+//
+// Android Auto integration for a static-data app is intentionally thin:
+// there is no navigation, no streaming, nothing requiring the full
+// androidx.car.app library stack. What Auto users get is:
+//   - a car-optimized browse list of licensed establishments
+//   - voice search via Auto's built-in assistant query
+//
+// We deliberately use the car *screen* conventions (big touch targets,
+// high-contrast text) without pulling third-party libraries. If the
+// maintainer later adopts androidx.car.app (Google's own library, still
+// no third party), CarActivity here is the seam to swap in.
+//
+// Data: assets/licensed.json ONLY. The subscriber tier is NOT packaged
+// for the car surface - watching unlicensed parlors while driving is a
+// use case we skip on purpose (data minimization behind the wheel).
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'ai.ninjatech.fedspa.auto'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "ai.ninjatech.fedspa.auto"
+        minSdk 26
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    // androidx.car.app would go here if the full template library is
+    // adopted; classic views keep the module dependency-free today.
+}

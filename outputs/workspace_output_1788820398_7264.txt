@@ -1,0 +1,8 @@
+=== XML SWEEP ===
+28 XML files checked
+ALL XML OK
+=== JSON SWEEP ===
+19 JSON files checked
+ALL JSON OK
+=== JS SYNTAX SWEEP ===
+ALL JS OK (11 files)

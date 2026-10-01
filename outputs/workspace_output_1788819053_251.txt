@@ -1,0 +1,9 @@
+  wrote android res/mipmap-mdpi/ic_launcher.png 48x48
+Traceback (most recent call last):
+  File "/workspace/FED-SPA/admin_scripts/generate_android_icons.py", line 71, in <module>
+    main()
+  File "/workspace/FED-SPA/admin_scripts/generate_android_icons.py", line 62, in main
+    big.putalpha(mask)
+  File "/usr/local/lib/python3.11/site-packages/PIL/Image.py", line 1897, in putalpha
+    self.im.putband(alpha.im, band)
+ValueError: images do not match

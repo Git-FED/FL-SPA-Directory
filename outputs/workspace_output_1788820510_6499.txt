@@ -1,0 +1,35 @@
+=== fan-out destinations ===
+--- web/data
+licensed.json
+unlicensed.encrypted.json
+--- extension/data
+licensed.json
+unlicensed.encrypted.json
+--- android/app/src/main/assets
+data
+--- android_auto/app/src/main/assets
+data
+--- watch/wear/src/main/assets
+MISSING DIR
+--- ios/Resources/Data
+licensed.json
+unlicensed.encrypted.json
+
+=== private plaintext (must be empty-records placeholder) ===
+{
+  "version": 1,
+  "as_of": "2026-09-07",
+  "parlors": []
+}
+
+=== committed envelope (must be placeholder, not real data) ===
+{
+  "v": 1,
+  "note": "PLACEHOLDER - run admin_scripts/encrypt_unlicensed.js to generate real fields.",
+  "kdf": "PBKDF2-SHA256",
+  "iterations": 310000,
+  "salt": "",
+  "iv": "",
+  "data": ""
+}
+

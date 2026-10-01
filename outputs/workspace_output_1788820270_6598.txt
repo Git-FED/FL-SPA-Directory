@@ -1,0 +1,8 @@
+=== FILE COUNT ===
+169
+=== MD FILES ===
+30
+=== LINK CHECK: internal md links ===
+checked 264 internal links
+BROKEN:
+  ./discussion/welcome.md -> ../../issues

@@ -1,0 +1,54 @@
+ios/FedSpa
+ios/FedSpa/Models
+ios/FedSpa/Resources
+ios/FedSpa/Resources/Data
+ios/Resources
+ios/Resources/Data
+---placeholder?---
+total 1336
+drwxr-xr-x 15 root root    4096 Sep  7 22:30 .
+drwxr-xr-x  9 user user    4096 Sep  7 22:16 ..
+drwxr-xr-x  4 root root    4096 Sep  7 22:17 .github
+-rw-r--r--  1 root root    1084 Sep  7 22:24 .gitignore
+-rw-r--r--  1 root root   10093 Sep  7 22:28 ADR.md
+-rw-r--r--  1 root root    6827 Sep  7 22:29 AGENTS.md
+-rw-r--r--  1 root root    2442 Sep  7 22:29 AUTHORS.md
+-rw-r--r--  1 root root    7265 Sep  7 22:26 BUILD.md
+-rw-r--r--  1 root root    4986 Sep  7 22:28 CHANGELOG.md
+-rw-r--r--  1 root root    3342 Sep  7 22:24 CITATIONS.md
+-rw-r--r--  1 root root    6172 Sep  7 22:30 CLAUDE.md
+-rw-r--r--  1 root root    4660 Sep  7 22:25 CODE_OF_CONDUCT.md
+-rw-r--r--  1 root root    5435 Sep  7 22:25 CONTRIBUTING.md
+-rw-r--r--  1 root root    3357 Sep  7 22:24 COPYING.md
+-rw-r--r--  1 root root    7070 Sep  7 22:27 DEPLOYMENT.md
+-rw-r--r--  1 root root    4163 Sep  7 22:28 FAQ.md
+-rw-r--r--  1 root root    5228 Sep  7 22:29 GOVERNANCE.md
+-rw-r--r--  1 root root    6763 Sep  7 22:26 INSTALL.md
+-rw-r--r--  1 root root    1077 Sep  7 22:24 LICENSE
+-rw-r--r--  1 root root    3737 Sep  7 22:29 MAINTAINERS.md
+-rw-r--r--  1 root root    2946 Sep  7 22:24 NOTICE.md
+-rw-r--r--  1 root root    4184 Sep  7 22:28 PRICING.md
+-rw-r--r--  1 root root    1487 Sep  7 22:30 PULL_REQUEST_TEMPLATE.md
+-rw-r--r--  1 root root    8904 Sep  7 22:24 README.md
+-rw-r--r--  1 root root    5831 Sep  7 22:27 ROADMAP.md
+-rw-r--r--  1 root root    6113 Sep  7 22:25 SECURITY.md
+-rw-r--r--  1 root root    4262 Sep  7 22:29 SUMMARY.md
+-rw-r--r--  1 root root    4642 Sep  7 22:25 SUPPORT.md
+-rw-r--r--  1 root root    6358 Sep  7 22:26 USAGE.md
+drwxr-xr-x  2 root root    4096 Sep  7 22:10 admin_scripts
+drwxr-xr-x  3 root root    4096 Sep  7 22:11 android
+drwxr-xr-x  3 root root    4096 Sep  7 22:11 android_auto
+-rw-r--r--  1 root root     919 Sep  7 22:30 bug_report.md
+drwxr-xr-x  5 root root    4096 Sep  7 21:56 data
+drwxr-xr-x  2 root root    4096 Sep  7 22:22 discussion
+drwxr-xr-x  2 root root    4096 Sep  7 22:18 docs
+drwxr-xr-x  8 root root    4096 Sep  7 22:00 extension
+-rw-r--r--  1 root root     828 Sep  7 22:30 feature_request.md
+drwxr-xr-x  7 root root    4096 Sep  7 22:16 ios
+drwxr-xr-x  2 root root    4096 Sep  7 22:23 prompts
+-rw-r--r--  1 root root 1093304 Sep  7 22:05 social-image.png
+-rw-r--r--  1 root root    5841 Sep  7 22:30 styles.css
+-rw-r--r--  1 root root    4463 Sep  7 22:30 todo.md
+drwxr-xr-x  3 root root    4096 Sep  7 22:12 watch
+drwxr-xr-x  5 root root    4096 Sep  7 21:59 web
+drwxr-xr-x  2 root root    4096 Sep  7 22:21 wiki

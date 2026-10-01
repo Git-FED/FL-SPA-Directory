@@ -1,0 +1,24 @@
+=== YAML CHECK (build.yml) ===
+odd indent line 41:                    web/js/search.js web/
+odd indent line 42:                    extension/manifest.js
+  [ok] actions/checkout
+  [ok] setup-python
+  [ok] setup-node
+  [ok] upload-artifact
+  [ok] validate_schema
+  [ok] generate_public_files
+  [ok] git diff --exit-code
+  [ok] node --check
+  [ok] aes-256-gcm
+=== DRIFT CHECK (fan-out idempotent) ===
+files regenerated after baseline: 10 (expected 0 for idempotence vs baseline — re-check with hashes)
+  web/data/licensed.json  b5d3a2e709a3
+  web/data/unlicensed.encrypted.json  693179c0d876
+  extension/data/licensed.json  b5d3a2e709a3
+  extension/data/unlicensed.encrypted.json  693179c0d876
+  android/app/src/main/assets/data/licensed.json  b5d3a2e709a3
+  android/app/src/main/assets/data/unlicensed.encrypted.json  693179c0d876
+  android_auto/app/src/main/assets/data/licensed.json  b5d3a2e709a3
+  watch/app/src/main/assets/data/licensed.json  b5d3a2e709a3
+  ios/Resources/Data/licensed.json  b5d3a2e709a3
+  ios/Resources/Data/unlicensed.encrypted.json  693179c0d876

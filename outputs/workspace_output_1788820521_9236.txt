@@ -1,0 +1,10 @@
+FED-SPA/android/app/src/main/assets/data:
+licensed.json
+unlicensed.encrypted.json
+
+FED-SPA/android_auto/app/src/main/assets/data:
+licensed.json
+===
+android/app/src/main/assets/data/licensed.json -> 1 parlors, 2026-09-07 | verified_by stripped: True
+android_auto/app/src/main/assets/data/licensed.json -> 1 parlors, 2026-09-07 | verified_by stripped: True
+watch/app/src/main/assets/data/licensed.json -> 1 parlors, 2026-09-07 | verified_by stripped: True

@@ -1,0 +1,32 @@
+8: *   Resources/Data/licensed.json              - public tier
+9: *   Resources/Data/unlicensed.encrypted.json  - subscriber envelope
+19:    @Published var licensed: [LicensedParlor] = []
+20:    @Published var unlicensed: [UnlicensedParlor] = []
+41:        guard let url = Bundle.main.url(forResource: "licensed", withExtension: "json"),
+45:        licensed = doc.parlors
+51:        guard let url = Bundle.main.url(forResource: "unlicensed.encrypted", withExtension: "json"),
+69:            unlicensed = doc.parlors
+84:            unlicensed = doc.parlors
+97:        unlicensed = []
+119:        return licensed.filter { p in
+130:    func searchUnlicensed(_ query: String, status: String? = nil) -> [UnlicensedParlor] {
+---
+Assets.xcassets
+ContentView.swift
+CryptoManager.swift
+DataManager.swift
+FedSpa
+FedSpa.xcodeproj
+FedSpaApp.swift
+Models
+README.md
+Resources
+---
+55:    parlors = []
+56:    for p in doc.get("parlors", []):
+58:        parlors.append(q)
+64:        "parlors": parlors,
+---SCHEMA KEYS---
+top keys: ['version', 'as_of', 'source', 'source_url', 'update_frequency', 'parlors']
+parlor keys: ['license_number', 'business_name', 'profession', 'status', 'expiration_date', 'original_issue_date', 'address', 'county', 'discipline_on_file', 'public_complaint', 'data_as_of', 'last_checked', 'verified_by', 'notes']
+envelope keys: ['v', 'note', 'kdf', 'iterations', 'salt', 'iv', 'data']

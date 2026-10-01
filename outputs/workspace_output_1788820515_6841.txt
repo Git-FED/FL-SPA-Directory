@@ -1,0 +1,19 @@
+16:  6. watch/app/src/main/assets/data/licensed.json          licensed only
+37:DESTS = [
+43:    (ROOT / "watch" / "app" / "src" / "main" / "assets" / "data", True, False),
+76:    for dest, want_lic, want_enc in DESTS:
+100:    print(f"[+] Generated {written} file(s) across {len(DESTS)} platform destinations.")
+=== actual watch tree ===
+watch/app/build.gradle
+watch/app/src/main/java/ai/ninjatech/fedspa/watch/CompanionClient.kt
+watch/app/src/main/java/ai/ninjatech/fedspa/watch/CryptoHelper.kt
+watch/app/src/main/java/ai/ninjatech/fedspa/watch/WatchActivity.kt
+watch/app/src/main/res/layout/activity_watch.xml
+watch/app/src/main/res/layout/watch_row.xml
+watch/app/src/main/res/values/strings.xml
+watch/app/src/main/res/values/colors.xml
+watch/app/src/main/res/values/themes.xml
+watch/app/src/main/AndroidManifest.xml
+watch/app/src/main/assets/data/licensed.json
+watch/settings.gradle
+watch/build.gradle

@@ -1,0 +1,23 @@
+        readAsset(context, LICENSED)?.let { runCatching { JSONObject(it) }.getOrNull() }
+
+    /** Load the subscriber envelope. Returns null when no watchlist is packaged. */
+    fun loadEnvelope(context: Context): JSONObject? =
+        readAsset(context, ENCRYPTED)?.let { runCatching { JSONObject(it) }.getOrNull() }
+
+    /** License count for the widget / launcher badge. */
+    fun licensedCount(context: Context): Int =
+        loadLicensed(context)?.optJSONArray("parlors")?.length() ?: 0
+
+    /** Data version metadata for SettingsActivity's "About data" block. */
+    fun dataInfo(context: Context): JSONObject? = loadLicensed(context)
+
+    private fun readAsset(context: Context, name: String): String? = try {
+        context.assets.open(name).use { stream: InputStream ->
+            stream.bufferedReader().use { it.readText() }
+        }
+    } catch (e: Exception) {
+        null
+    }
+
+---source_url usage in web---
+---ENCRYPTOR SELF-TEST support---

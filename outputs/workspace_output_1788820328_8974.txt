@@ -1,0 +1,50 @@
+ios
+ios/Assets.xcassets
+ios/Assets.xcassets/AccentColor.colorset
+ios/Assets.xcassets/AppIcon.appiconset
+ios/FedSpa.xcodeproj
+ios/Models
+ios/Resources
+ios/Resources/Data
+---
+        "version": doc.get("version", 1),
+        "as_of": doc.get("as_of", date.today().isoformat()),
+        "update_frequency": doc.get("update_frequency", "annual"),
+        "source_url": doc.get("source_url", ""),
+        "parlors": parlors,
+        "generated_note": ADMIN_ONLY_NOTE,
+    }
+
+    enc_exists = SOURCE_ENC.exists()
+    enc_is_placeholder = False
+    envelope = None
+    if enc_exists:
+        envelope = json.loads(SOURCE_ENC.read_text())
+        enc_is_placeholder = not envelope.get("data")
+
+    written = 0
+    for dest, want_lic, want_enc in DESTS:
+        if want_lic:
+            dest.mkdir(parents=True, exist_ok=True)
+            (dest / "licensed.json").write_text(json.dumps(public, indent=2) + "\n")
+            written += 1
+        if want_enc:
+            dest.mkdir(parents=True, exist_ok=True)
+            if enc_exists and not enc_is_placeholder:
+                shutil.copyfile(SOURCE_ENC, dest / "unlicensed.encrypted.json")
+                written += 1
+            else:
+                # Keep a placeholder so every consumer can code against the
+                # same filename before the first real blob exists.
+                (dest / "unlicensed.encrypted.json").write_text(
+                    json.dumps(
+                        {"v": 1, "kdf": "PBKDF2-SHA256", "iterations": 310000,
+                         "salt": "", "iv": "", "data": "",
+                         "note": "placeholder - run admin_scripts/encrypt_unlicensed.js"},
+                        indent=2,
+                    )
+                    + "\n"
+                )
+                written += 1
+
+    print(f"[+] Generated {written} file(s) across {len(DESTS)} platform destinations.")

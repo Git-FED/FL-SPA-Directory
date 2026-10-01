@@ -1,0 +1,7 @@
+Validating data/public/licensed.json
+  [ok] 1 licensed establishment(s) pass
+Validating data/private/unlicensed.plain.json
+  [ok] 0 unlicensed entr(ies) pass
+
+All data files conform to data/meta/schema.json.
+exit=0

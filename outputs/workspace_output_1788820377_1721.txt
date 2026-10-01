@@ -1,0 +1,7 @@
+[+] Loaded 0 unlicensed entries.
+[+] Encrypted 64 bytes -> /tmp/fedspa-test/env.json
+[!] Keep the password safe; it is NOT recoverable from the output.
+[!] Remind subscribers: unlock code rotates with every annual update.
+[+] Self-check passed: encryption round-trips correctly.
+crypto round-trip OK — envelope v1, kdf PBKDF2-SHA256, 310000 iterations
+wrong-code rejection OK (Unsupported state or unable to authentic)

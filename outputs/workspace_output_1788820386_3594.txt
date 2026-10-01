@@ -1,0 +1,32 @@
+[+] Generated 10 file(s) across 6 platform destinations.
+    Admin-only fields stripped from distribution copies.
+    NOTE: unlicensed blob is still the placeholder -
+    run admin_scripts/encrypt_unlicensed.js once you have entries.
+=== VERIFY FAN-OUT ===
+--- web/data/licensed.json
+ as_of=2026-09-07 parlors=1 name=Halo Asian Spa, Inc verified_by=False (stripped: True)
+--- extension/data/licensed.json
+ as_of=2026-09-07 parlors=1 name=Halo Asian Spa, Inc verified_by=False (stripped: True)
+--- android/app/src/main/assets/data/licensed.json
+ as_of=2026-09-07 parlors=1 name=Halo Asian Spa, Inc verified_by=False (stripped: True)
+--- android_auto/app/src/main/assets/data/licensed.json
+ as_of=2026-09-07 parlors=1 name=Halo Asian Spa, Inc verified_by=False (stripped: True)
+--- watch/app/src/main/assets/data/licensed.json
+ as_of=2026-09-07 parlors=1 name=Halo Asian Spa, Inc verified_by=False (stripped: True)
+--- ios/Resources/Data/licensed.json
+ as_of=2026-09-07 parlors=1 name=Halo Asian Spa, Inc verified_by=False (stripped: True)
+=== ENVELOPE COPIES ===
+--- web/data/unlicensed.encrypted.json
+ v=1 kdf=PBKDF2-SHA256 iters=310000 data_len=0 note=placeholder - run admin_scripts/encrypt_unlicensed.js
+--- extension/data/unlicensed.encrypted.json
+ v=1 kdf=PBKDF2-SHA256 iters=310000 data_len=0 note=placeholder - run admin_scripts/encrypt_unlicensed.js
+--- android/app/src/main/assets/data/unlicensed.encrypted.json
+ v=1 kdf=PBKDF2-SHA256 iters=310000 data_len=0 note=placeholder - run admin_scripts/encrypt_unlicensed.js
+--- ios/Resources/Data/unlicensed.encrypted.json
+ v=1 kdf=PBKDF2-SHA256 iters=310000 data_len=0 note=placeholder - run admin_scripts/encrypt_unlicensed.js
+=== AUTO/WATCH must have NO envelope ===
+android_auto/app/src/main/assets/data/:
+licensed.json
+
+watch/app/src/main/assets/data/:
+licensed.json

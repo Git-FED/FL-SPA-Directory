@@ -1,0 +1,12 @@
+All JSON OK
+FED-SPA/ios/Assets.xcassets/AccentColor.colorset/Contents.json
+FED-SPA/ios/Assets.xcassets/AppIcon.appiconset/Contents.json
+FED-SPA/ios/Assets.xcassets/AppIcon.appiconset/icon-1024.png
+FED-SPA/ios/Assets.xcassets/Contents.json
+FED-SPA/ios/ContentView.swift
+FED-SPA/ios/CryptoManager.swift
+FED-SPA/ios/DataManager.swift
+FED-SPA/ios/FedSpa.xcodeproj/project.json
+FED-SPA/ios/FedSpaApp.swift
+FED-SPA/ios/Models/Parlor.swift
+FED-SPA/ios/README.md

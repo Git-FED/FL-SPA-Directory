@@ -1,0 +1,16 @@
+zip created:
+-rw-r--r-- 1 root root 2658277 Sep  7 22:35 fedspa-src.zip
+
+plaintext excluded check:
+0
+0 (good - plaintext NOT in zip)
+
+=== final tree stats ===
+179
+total files
+52
+markdown files
+19
+json files
+34
+code files (kt/swift/js/py)

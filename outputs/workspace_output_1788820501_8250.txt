@@ -1,0 +1,3 @@
+smoke files OK
+extension manifest OK
+encryptor syntax OK

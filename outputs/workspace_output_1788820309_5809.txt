@@ -1,0 +1,8 @@
+16:   `Resources/Data/` as target resources
+26:| `Resources/Data/licensed.json` | Public, plaintext | `admin_scripts/generate_public_files.py` |
+27:| `Resources/Data/unlicensed.encrypted.json` | Subscriber, encrypted | `admin_scripts/generate_public_files.py` |
+---project.json---
+20:    "  3. Add all .swift files + Assets.xcassets + Resources/Data",
+30:    "DataManager.swift" : "bundled data loading, unlock state, search",
+32:    "Resources/Data/licensed.json" : "public tier (generate_public_files.py)",
+33:    "Resources/Data/unlicensed.encrypted.json" : "subscriber envelope",

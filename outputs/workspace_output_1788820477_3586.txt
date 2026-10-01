@@ -1,0 +1,82 @@
+     1	# FED-SPA CI: validate data, verify web, package zip.
+     2	#
+     3	# No third-party actions beyond actions/checkout (GitHub's own).
+     4	# Everything else runs plain Python (stdlib) and Node (native crypto).
+     5	
+     6	name: build
+     7	
+     8	on:
+     9	  push:
+    10	    branches: [main]
+    11	  pull_request:
+    12	    branches: [main]
+    13	  workflow_dispatch:
+    14	
+    15	jobs:
+    16	  validate:
+    17	    name: Validate data + web
+    18	    runs-on: ubuntu-latest
+    19	    steps:
+    20	      - uses: actions/checkout@v4
+    21	
+    22	      - name: Set up Python
+    23	        uses: actions/setup-python@v5
+    24	        with:
+    25	          python-version: '3.11'
+    26	
+    27	      - name: Set up Node
+    28	        uses: actions/setup-node@v4
+    29	        with:
+    30	          node-version: '20'
+    31	
+    32	      - name: Validate JSON datasets against schema rules
+    33	        run: python3 admin_scripts/validate_schema.py
+    34	
+    35	      - name: Regenerate public data copies (fan-out consistency check)
+    36	        run: python3 admin_scripts/generate_public_files.py && git diff --exit-code
+    37	
+    38	      - name: Web smoke test (parse + key files present)
+    39	        run: |
+    40	          for f in web/index.html web/manifest.webmanifest web/js/app.js web/js/crypto.js \
+    41	                   web/js/search.js web/js/ui.js web/js/service-worker.js \
+    42	                   extension/manifest.json extension/popup/popup.html; do
+    43	            test -f "$f" || { echo "MISSING: $f"; exit 1; }
+    44	          done
+    45	          node -e "
+    46	          const m = require('./extension/manifest.json');
+    47	          if (m.manifest_version !== 3) { throw new Error('manifest must be MV3'); }
+    48	          console.log('extension manifest OK');
+    49	          "
+    50	          node --check admin_scripts/encrypt_unlicensed.js
+    51	
+    52	      - name: Envelope self-test (encrypt + decrypt round-trip)
+    53	        run: |
+    54	          mkdir -p /tmp/fedspa-test
+    55	          echo '{"version":1,"as_of":"2026-09-07","parlors":[]}' > /tmp/fedspa-test/plain.json
+    56	          FEDSPA_PASSWORD=test-password \
+    57	            node admin_scripts/encrypt_unlicensed.js /tmp/fedspa-test/plain.json /tmp/fedspa-test/env.json
+    58	          node -e "
+    59	          const fs = require('fs');
+    60	          const crypto = require('crypto');
+    61	          const env = JSON.parse(fs.readFileSync('/tmp/fedspa-test/env.json', 'utf8'));
+    62	          const key = crypto.pbkdf2Sync('test-password', Buffer.from(env.salt, 'base64'), env.iterations, 32, 'sha256');
+    63	          const data = Buffer.from(env.data, 'base64');
+    64	          const iv = Buffer.from(env.iv, 'base64');
+    65	          const decipher = crypto.createDecipheriv('aes-256-gcm', key, iv);
+    66	          decipher.setAuthTag(data.subarray(data.length - 16));
+    67	          const plain = Buffer.concat([decipher.update(data.subarray(0, data.length - 16)), decipher.final()]);
+    68	          const doc = JSON.parse(plain.toString('utf8'));
+    69	          if (!doc.parlors) throw new Error('round-trip failed');
+    70	          console.log('crypto round-trip OK');
+    71	          "
+    72	
+    73	      - name: Package release artifact
+    74	        run: |
+    75	          python3 admin_scripts/generate_public_files.py
+    76	          cd .. && zip -qr fedspa-src.zip FED-SPA -x "FED-SPA/data/private/unlicensed.plain.json"
+    77	          mv fedspa-src.zip "$GITHUB_WORKSPACE/"
+    78	
+    79	      - uses: actions/upload-artifact@v4
+    80	        with:
+    81	          name: fedspa-src
+    82	          path: fedspa-src.zip

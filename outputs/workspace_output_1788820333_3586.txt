@@ -1,0 +1,8 @@
+web/js/app.js:38:      $('dataAsOf').textContent = 'Data as of ' + UI.prettyDate(doc.as_of);
+android/app/src/main/java/ai/ninjatech/fedspa/NetworkHelper.kt:35:    /** Data version metadata for SettingsActivity's "About data" block. */
+extension/popup/popup.js:46:      $('dataAsOf').textContent = 'data as of ' + (doc.as_of || '-');
+=== ANDROID JSON PATHS ===
+14: * generate_public_files.py drops into app/src/main/assets/:
+15: *   licensed.json              (public tier)
+20:    private const val LICENSED = "licensed.json"
+39:        context.assets.open(name).use { stream: InputStream ->

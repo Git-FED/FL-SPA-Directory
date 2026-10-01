@@ -1,5 +1,7 @@
 # FED-SPA
 
+<img width="2560" height="1440" alt="fed-spa-detective-02-evidence-wall" src="https://github.com/user-attachments/assets/c5745f27-7325-4b38-b357-f88f22dd9105" />
+
 **Florida Establishment Directory — Spa & Parlor Assurance**
 
 A no-backend, once-a-year directory of licensed massage establishments in the State of Florida — verified against the Florida DOH Medical Quality Assurance (MQA) portal — plus a subscriber-only, client-side-encrypted watchlist of businesses we could not find a license for.
@@ -10,6 +12,8 @@ A no-backend, once-a-year directory of licensed massage establishments in the St
 ## The one-line pitch
 
 You should never have to wonder whether the spa you're standing in front of is licensed. FED-SPA puts the verified answer on every screen you own — desktop, phone, tablet, browser, car, and wrist — with zero servers, zero trackers, and zero third-party code.
+
+<img width="2560" height="1440" alt="fed-spa-detective-05-lantern" src="https://github.com/user-attachments/assets/1b65bcfa-6eda-4d99-957a-5ef400ac2cae" />
 
 ## The three constraints
 
@@ -35,6 +39,8 @@ Every decision in this repo traces back to three rules. They are not preferences
 | [ios/](ios/) | licensed + watchlist | SwiftUI, zero SPM dependencies |
 
 The full capability matrix, including the reasoning behind every "licensed only" decision, is in [wiki/Platform-surface-map.md](wiki/Platform-surface-map.md).
+
+<img width="2560" height="1440" alt="fed-spa-detective-01-alley" src="https://github.com/user-attachments/assets/2093a142-c5c3-439b-ba70-a118748353a9" />
 
 ## Repository layout
 

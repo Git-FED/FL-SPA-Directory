@@ -1,0 +1,19 @@
+background/background.js:8:     - Message router: popup <-> options messaging.
+background/background.js:65:// Simple message router for popup/options.
+background/background.js:67:  if (msg && msg.type === 'GET_DATA_VERSION') {
+background/background.js:71:  if (msg && msg.type === 'BADGE_REFRESH') {
+popup/popup.js:6:   chose "remember" in options.
+popup/popup.js:29:      chrome.storage.local.get({ rememberCode: false, savedCode: '' }, resolve);
+popup/popup.js:180:      if (settings.rememberCode) {
+popup/popup.js:181:        chrome.storage.local.set({ savedCode: pw });
+popup/popup.js:206:    $('optionsBtn').addEventListener('click', () => {
+popup/popup.js:208:      else chrome.tabs.create({ url: chrome.runtime.getURL('options/options.html') });
+popup/popup.js:214:    if (settings.rememberCode && settings.savedCode && state.envelope && state.envelope.data) {
+popup/popup.js:216:        state.unlicensed = await decrypt(state.envelope, settings.savedCode);
+popup/popup.js:219:        chrome.storage.local.remove('savedCode');
+manifest.json:29:  "options_ui": {
+manifest.json:30:    "page": "options/options.html",
+content/content.js:12:   in options (rememberCode) - decrypting happens right here,
+content/content.js:71:      chrome.storage.local.get({ rememberCode: false, savedCode: '' }, resolve));
+content/content.js:72:    if (settings.rememberCode && settings.savedCode) {
+content/content.js:76:          const doc = await decrypt(envelope, settings.savedCode);

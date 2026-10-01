@@ -1,0 +1,133 @@
+/*
+ * FED-SPA — root styles.css
+ * ---------------------------------------------------------------------------
+ * THE DESIGN-TOKEN CONTRACT, at repository root.
+ *
+ * This file is the canonical definition of the FED-SPA visual language. The
+ * six surfaces each implement their own styling (vanilla CSS on web/extension,
+ * colors.xml + drawables on the three Android modules, the Palette enum in
+ * iOS ContentView.swift) — no shared runtime exists between them, so the
+ * contract lives HERE, in documentation form, where every implementation
+ * and every contributor can check it.
+ *
+ * RULES (enforced in review per ADR-008):
+ *   - Tokens are duplicated, never reinterpreted. A surface that "fixes" a
+ *     token value is a defect, not an improvement.
+ *   - The status-color mapping is identical on every surface and is
+ *     product semantics, not styling: green = licensed-good-standing,
+ *     yellow = exists-but-attend, red = do-not-rely, gray = everything else.
+ *   - The web app (web/css/style.css) and extension CSS import these exact
+ *     values; Android res/values/colors.xml and the iOS Palette enum mirror
+ *     them one-for-one.
+ *
+ * This file is also loadable: web/ and extension/ pages may link it directly
+ * for shared base rules; the surfaces' own sheets layer on top.
+ * ---------------------------------------------------------------------------
+ */
+
+:root {
+  /* -- Surfaces ------------------------------------------------------------ */
+  --fedspa-bg:        #0b0e14;  /* app background                        */
+  --fedspa-bg-raised: #131824;  /* cards, popups, dialogs                 */
+  --fedspa-bg-inset:  #0d1117;  /* wells, code blocks, inputs             */
+
+  /* -- Lines --------------------------------------------------------------- */
+  --fedspa-border:    #263042;  /* card outlines, dividers, input borders */
+
+  /* -- Text ---------------------------------------------------------------- */
+  --fedspa-text:       #e6e9ef; /* primary                                 */
+  --fedspa-text-muted: #9aa4b5; /* secondary, labels                       */
+  --fedspa-text-faint: #6b7687; /* tertiary, footnotes, placeholders       */
+
+  /* -- Semantics ----------------------------------------------------------- */
+  --fedspa-accent:   #2dd4a7;   /* brand, links, clear/active status       */
+  --fedspa-danger:   #ff5f6d;   /* expired / revoked / no-license-found    */
+  --fedspa-warning:  #f2c14e;   /* delinquent / probation                  */
+  --fedspa-neutral:  #6b7687;   /* inactive / unknown status               */
+
+  /* -- Status badge text (dark-on-bright for contrast on all surfaces) ----- */
+  --fedspa-badge-text: #06251B; /* on accent-filled badges                 */
+
+  /* -- Type ---------------------------------------------------------------- */
+  --fedspa-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                  "Helvetica Neue", Arial, sans-serif; /* web-safe only:
+                  no web fonts — the no-third-party rule includes typefaces */
+}
+
+/* ---------------------------------------------------------------------------
+ * STATUS COLOR MAPPING — the product-semantics contract.
+ * Identical on all six surfaces; do not "improve" locally.
+ *
+ *   Clear, Active                     -> #2dd4a7 (accent green)
+ *   Delinquent, Probation             -> #f2c14e (warning yellow)
+ *   Expired, Revoked, no_license_found-> #ff5f6d (danger red)
+ *   Inactive, and anything unknown    -> #6b7687 (neutral gray)
+ *      (the watch surface defaults unknown to #9aa4b5 text-muted for
+ *       legibility on tiny screens — the one documented exception)
+ * ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------
+ * BASE RULES — the minimal shared layer any FED-SPA surface may rely on.
+ * ------------------------------------------------------------------------- */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fedspa-bg);
+  color: var(--fedspa-text);
+  font-family: var(--fedspa-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--fedspa-accent); }
+
+/* The shared status badge: bright fill, dark badge text, readable everywhere */
+.fedspa-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--fedspa-badge-text);
+  background: var(--fedspa-neutral);
+  letter-spacing: 0.02em;
+}
+.fedspa-badge[data-status="clear"],
+.fedspa-badge[data-status="active"]            { background: var(--fedspa-accent); }
+.fedspa-badge[data-status="delinquent"],
+.fedspa-badge[data-status="probation"]         { background: var(--fedspa-warning); }
+.fedspa-badge[data-status="expired"],
+.fedspa-badge[data-status="revoked"],
+.fedspa-badge[data-status="no_license_found"]  { background: var(--fedspa-danger); }
+
+/* Shared card shell */
+.fedspa-card {
+  background: var(--fedspa-bg-raised);
+  border: 1px solid var(--fedspa-border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+/* Shared input shell */
+.fedspa-input {
+  background: var(--fedspa-bg-inset);
+  border: 1px solid var(--fedspa-border);
+  border-radius: 8px;
+  color: var(--fedspa-text);
+  padding: 10px 12px;
+  font: inherit;
+}
+.fedspa-input::placeholder { color: var(--fedspa-text-faint); }
+.fedspa-input:focus { outline: 1px solid var(--fedspa-accent); }
+
+/* Muted / faint text helpers */
+.fedspa-muted { color: var(--fedspa-text-muted); }
+.fedspa-faint { color: var(--fedspa-text-faint); }
+
+/* Print: the directory is a public-records tool; printing a record must work */
+@media print {
+  body { background: #fff; color: #000; }
+  .fedspa-card { border: 1px solid #999; background: #fff; }
+  .fedspa-badge { color: #000; border: 1px solid #999; background: #fff !important; }
+}

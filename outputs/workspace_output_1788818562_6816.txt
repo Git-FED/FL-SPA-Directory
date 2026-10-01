@@ -1,0 +1,55 @@
+# FED-SPA Build Plan
+
+## Section 1: Setup
+- [ ] Create this todo.md
+- [ ] Create full directory skeleton
+- [ ] Generate logo + social preview images
+- [ ] Install icon tooling (Pillow)
+
+## Section 2: Data + Admin Scripts
+- [ ] data/public/licensed.json (Halo Asian Spa seed entry)
+- [ ] data/meta/schema.json, changelog.md, raw/
+- [ ] data/private/unlicensed.plain.json + unlicensed.encrypted.json placeholders
+- [ ] admin_scripts: scrape_mqa.py, encrypt_unlicensed.js, validate_schema.py, generate_public_files.py, merge_and_encrypt.sh
+
+## Section 3: Web PWA
+- [ ] index.html, offline.html, manifest.webmanifest
+- [ ] css: style.css, dark-theme.css, responsive.css
+- [ ] js: app.js, crypto.js, search.js, ui.js, service-worker.js
+- [ ] icons (from generated logo)
+
+## Section 4: Browser Extension
+- [ ] manifest.json + bundled data copies
+- [ ] popup (html/css/js), background (js, alarms), content (js/css), options (html/css/js), icons
+
+## Section 5: Android / Auto / Wear
+- [ ] android skeleton (gradle, manifest, 6 Kotlin files, res, assets, mipmap icons)
+- [ ] android_auto skeleton
+- [ ] watch skeleton
+
+## Section 6: iOS
+- [ ] SwiftUI sources, Resources, README
+
+## Section 7: Community + Docs
+- [ ] .github (build.yml, issue templates, PR template, discussion welcome)
+- [ ] docs/ (4 files), wiki/, discussion/, prompts/
+- [ ] All root files (README w/ Ko-fi, LICENSE, 27 other md files, styles.css)
+- [ ] .gitignore, social-image.png
+
+## Section 8: Verify + Package
+- [ ] Copy shared data into extension/android/auto/watch/ios asset folders
+- [ ] Run schema validation script
+- [ ] Verify full tree
+- [ ] Zip repo, attach deliverables
+---EXT---
+FED-SPA/extension/background/alarms.js
+FED-SPA/extension/background/background.js
+FED-SPA/extension/content/content.css
+FED-SPA/extension/content/content.js
+FED-SPA/extension/manifest.json
+FED-SPA/extension/popup/popup.css
+FED-SPA/extension/popup/popup.html
+FED-SPA/extension/popup/popup.js
+---LOGO---
+generated_image_6ba4e145-1a91-403d-a070-0d63f15af95d_0.png
+generated_image_d0736a0b-d0e6-4ee3-b9e0-db94658ecd41_0.png

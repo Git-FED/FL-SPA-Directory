@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FED-SPA is Florida's independent verification layer for licensed massage establishments." />
+  <meta name="theme-color" content="#071316" />
+  <title>FED-SPA — Verify before you walk in</title>
+  <link rel="icon" href="icons/icon-192.png" type="image/png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dark-theme.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-glow page-glow-one" aria-hidden="true"></div>
+  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="FED-SPA home">
+      <img src="icons/icon-192.png" alt="" width="42" height="42" class="brand-icon" />
+      <div class="brand-text">
+        <span class="eyebrow">Florida · public record, made useful</span>
+        <h1>FED<span>-</span>SPA</h1>
+      </div>
+    </a>
+    <button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <nav id="primaryNav" class="top-nav" aria-label="Primary navigation">
+      <a href="#directory">Directory</a>
+      <a href="#archive">Advanced archive</a>
+      <a href="#method">How it works</a>
+    </nav>
+    <div class="header-meta">
+      <span id="dataAsOf" class="chip" title="License data snapshot date">Data as of —</span>
+      <span id="dataCount" class="chip chip-live" title="Establishments in the list">0 verified</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="heroTitle"><canvas id="particleCanvas" class="hero-network" aria-hidden="true"></canvas>
+      <div class="hero-copy">
+        <p class="kicker"><span class="pulse-dot"></span> The verification layer for Florida wellness</p>
+        <h2 id="heroTitle">Know what you’re walking into.</h2>
+        <p class="hero-lede">A calmer, clearer way to check a massage establishment before you book, visit, or recommend it. FED-SPA turns the state’s official license data into a fast, human-readable signal.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#directory">Search the directory <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#archive">Explore the advanced archive <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-proof" aria-label="Project principles">
+          <span><strong>01</strong> Official source</span>
+          <span><strong>02</strong> No account</span>
+          <span><strong>03</strong> Updated annually</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <img src="generated_images/fedspa-hero.webp" alt="FED-SPA verification mark on a dark, dotted field" width="900" height="874" fetchpriority="high" decoding="async" />
+          <div class="scan-line" aria-hidden="true"></div>
+          <div class="floating-note note-top"><span class="note-icon">✓</span><span><strong>Signal confirmed</strong><small>State database match</small></span></div>
+          <div class="floating-note note-bottom"><span class="note-number">2026.1</span><span><strong>Release snapshot</strong><small>Human checked · Florida</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="FED-SPA highlights">
+      <div><strong>Public by default</strong><span>The licensed directory stays free.</span></div>
+      <div><strong>Built for a real decision</strong><span>Search by name, city, county, or license.</span></div>
+      <div><strong>Designed to be checked</strong><span>Every record points back to the source.</span></div>
+    </section>
+
+    
+    <section class="signal-gallery" aria-labelledby="galleryTitle">
+      <div class="gallery-heading"><div><p class="section-label">Signal / visual index</p><h2 id="galleryTitle">A clearer view of the network.</h2></div><p>Quiet, high-contrast visuals keep the experience human while the data does the work.</p></div>
+      <div class="gallery-grid">
+        <figure class="gallery-card gallery-card-wide"><img src="generated_images/fedspa-florida-network.webp" alt="Abstract cyan and violet network visualization" loading="lazy" decoding="async" /><figcaption><span class="mono">01 / statewide view</span><strong>Signals connect across Florida.</strong></figcaption></figure>
+        <figure class="gallery-card"><img src="generated_images/fedspa-signal-orbit.webp" alt="Abstract luminous verification signal orbit" loading="lazy" decoding="async" /><figcaption><span class="mono">02 / verification layer</span><strong>Context around every result.</strong></figcaption></figure>
+      </div>
+    </section>
+
+    <section id="directory" class="directory-section" aria-labelledby="directoryTitle">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">01 / Open directory</p>
+          <h2 id="directoryTitle">The public signal.</h2>
+        </div>
+        <p>Search the current licensed snapshot. Select any result to inspect the record, dates, flags, and verification trail.</p>
+      </div>
+      <section class="archive-console" aria-label="Search and filters">
+        <div class="console-topline"><span class="console-status"><span class="status-light"></span> Live archive interface</span><span class="mono">release 2026.1</span></div>
+        <div class="search-row">
+          <label class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search name, city, county, or license #" autocomplete="off" spellcheck="false" aria-label="Search establishments" /></label>
+          <select id="statusFilter" aria-label="Filter by status"><option value="all">All statuses</option><option value="Clear">Clear</option><option value="Active">Active</option><option value="Delinquent">Delinquent</option><option value="Expired">Expired</option><option value="Inactive">Inactive</option><option value="Probation">Probation</option></select>
+        </div>
+        <div class="meta-row"><span id="resultCount" class="muted" role="status">Loading…</span><button id="expandAll" class="ghost small" type="button">Browse all records</button></div>
+      </section>
+      <div id="errorBox" class="error hidden" role="alert"></div>
+      <ul id="parlorList" class="parlor-list" aria-live="polite"></ul>
+    </section>
+
+    <section id="archive" class="premium-section" aria-labelledby="archiveTitle">
+      <div class="premium-art"><img src="generated_images/fedspa-archive.webp" alt="FED-SPA verification emblem" width="600" height="600" loading="lazy" decoding="async" /><span class="art-label">Private release<br /><strong>01 / 01</strong></span></div>
+      <div class="premium-copy">
+        <p class="section-label gold-label">02 / Advanced archive</p>
+        <h2 id="archiveTitle">Go deeper than “licensed.”</h2>
+        <p class="premium-lede">The Advanced Archive is the deliberate layer for people who want more context: documented portal searches, historical snapshots, and the encrypted watchlist of records that need a closer look.</p>
+        <div class="feature-grid"><div><span>◈</span><strong>Context-rich records</strong><small>Search notes, check dates, and the trail behind the signal.</small></div><div><span>⌁</span><strong>Encrypted on-device</strong><small>Your access code unlocks the archive in this browser.</small></div><div><span>↻</span><strong>Fresh annual release</strong><small>New research and a rotating release code each year.</small></div><div><span>⊙</span><strong>Built with restraint</strong><small>No ads, no tracking, no paywall on public records.</small></div></div>
+        <div class="premium-cta-box premium-payment-box">
+          <div class="premium-payment-copy">
+            <span class="premium-badge">PREMIUM ACCESS</span>
+            <h3>Keep the full verification picture close.</h3>
+            <p>Choose a secure checkout below. The public licensed directory remains free.</p>
+          </div>
+          <div id="paymentGate" class="payment-gate" role="region" aria-labelledby="paymentGateTitle">
+            <div class="payment-gate-copy">
+              <strong id="paymentGateTitle">Adults only</strong>
+              <span>You must confirm that you are 18 or older to view payment options.</span>
+            </div>
+            <div class="payment-gate-actions">
+              <button id="ageConfirmButton" class="button button-primary small" type="button">I am 18 or older</button>
+              <button id="ageDenyButton" class="ghost small" type="button">Not now</button>
+            </div>
+            <p id="ageGateMessage" class="muted xsmall" role="status"></p>
+          </div>
+          <div id="paymentEmbeds" class="payment-embeds" hidden>
+            <div class="payment-option paypal-option">
+              <span class="payment-label">PayPal</span>
+              <div id="paypal-button-container-P-4FD24238VX4902214NK2XP2Y" class="paypal-wrap"><span class="paypal-fallback">Loading secure checkout…</span></div>
+              <div class="support-stack" aria-label="Support FED-SPA">
+                <div class="support-heading"><span class="payment-label">Support the public signal</span><span class="support-note">Optional reader support</span></div>
+                <div class="support-actions">
+                  <div class="support-action support-kofi"><span class="support-action-label">Ko-fi</span><a class="kofi-button" href="https://ko-fi.com/W3T61ZU5FS" target="_blank" rel="noopener noreferrer">Support me on Ko-fi</a></div>
+                  <div class="support-action support-coffee"><span class="support-action-label">Buy Me a Coffee</span><a href="https://www.buymeacoffee.com/fedpromptly" target="_blank" rel="noopener noreferrer"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a book&emoji=📖&slug=fedpromptly&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a book on Buy Me a Coffee" loading="lazy" /></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-option stripe-option">
+              <span class="payment-label">Stripe</span>
+              <div class="paypal-wrap stripe-wrap" aria-label="Secure Stripe checkout"><stripe-buy-button buy-button-id="buy_btn_1UJKaaJaRf233kfWKZ81fcIe" publishable-key="pk_live_51UIdAGJaRf233kfWlFacR31IYVGdjCVAttNFzIgQGXQzrUdc894iJcBqamRZNwF11z2AN5kvjyzitor462f2egVI00UmKj0sd8"></stripe-buy-button></div>
+            </div>
+          </div>
+        </div>
+        <p class="legal-note">The public licensed directory remains free. Advanced Archive access is a recurring subscription managed by PayPal and is separate from the local, encrypted unlock flow below.</p>
+      </div>
+    </section>
+
+    <section id="subscriberSection" class="subscriber" aria-label="Local archive unlock">
+      <div><p class="section-label">03 / Local unlock</p><h2>Already have a release code?</h2><p>Subscribers can decrypt the current watchlist on this device. The data stays in the browser; there is no server login.</p></div>
+      <div id="unlockForm" class="unlock-form" hidden><label for="passwordInput">Access code</label><div class="unlock-row"><input id="passwordInput" type="password" placeholder="Enter your release code" autocomplete="off" aria-label="Subscriber access code" /><button id="unlockButton" type="button">Unlock archive</button></div><p id="unlockMsg" class="muted small" role="status"></p><p class="muted xsmall">Wrong code simply fails to decrypt. Your code rotates with each annual update.</p></div>
+      <div id="unlicensedPanel" hidden><h3>Unlicensed watchlist <span id="unlicensedCount" class="chip"></span></h3><input id="unlicensedSearch" type="search" placeholder="Filter watchlist" autocomplete="off" aria-label="Filter unlicensed watchlist" /><ul id="unlicensedList" class="parlor-list"></ul><button id="lockButton" class="ghost small" type="button">Lock again &amp; forget code</button></div>
+      <div id="subscriberNotice" class="muted small">The current release has no watchlist entries. Subscribers receive an access code when entries are published.</div>
+    </section>
+
+    <section id="method" class="method-section" aria-labelledby="methodTitle"><div class="method-copy"><p class="section-label">04 / The method</p><h2 id="methodTitle">A trustworthy interface for public information.</h2><p>Every entry is checked against the Florida Department of Health MQA verification portal. We record license status, expiration, discipline flags, complaints, and the date of the check — then make it easy for you to verify the source yourself.</p><a class="text-link" href="https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders" target="_blank" rel="noopener noreferrer">Open the Florida MQA portal ↗</a></div><div class="method-steps"><div><span>01</span><strong>Find it</strong><p>Search the establishment or license number.</p></div><div><span>02</span><strong>Read it</strong><p>See status, dates, flags, and the check trail.</p></div><div><span>03</span><strong>Verify it</strong><p>Follow the source link before relying on it.</p></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><div class="brand footer-brand"><img src="icons/icon-192.png" alt="" width="34" height="34" class="brand-icon" /><div><strong>FED-SPA</strong><span>Florida Establishment Directory</span></div></div><a class="text-link" href="#top">Back to top ↑</a></div><p class="muted small">FED-SPA is an independent project. Data reflects the Florida DOH MQA database as of the snapshot date shown above and may not include changes made after it. License status can change at any time — verify directly with the state before relying on it.</p><p class="muted xsmall">© <span id="year"></span> FED-SPA · Data: Florida DOH MQA portal</p></footer>
+
+  <dialog id="detailModal" class="detail-modal" aria-labelledby="modalTitle"><div class="modal-head"><h2 id="modalTitle">Establishment</h2><button id="modalClose" class="ghost small" type="button" aria-label="Close details">Close</button></div><div id="modalBody" class="modal-body"></div></dialog>
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=BAA_ndqaWMyQwTnDZ0LXwLQ22jdJo9uxkeXYqmBbF-hD41HMiZ83mvOcx1Kti0b6ZfXfje7Q1ievNaS8Ok&amp;vault=true&amp;intent=subscription" data-sdk-integration-source="button-factory"></script>
+  <script>
+    (function () {
+      'use strict';
+      function showPayments() {
+        var gate = document.getElementById('paymentGate');
+        var embeds = document.getElementById('paymentEmbeds');
+        if (!gate || !embeds) return;
+        gate.hidden = true;
+        embeds.hidden = false;
+        try { sessionStorage.setItem('fedspa_age_verified', '18-plus'); } catch (e) {}
+        if (window.paypal && !embeds.dataset.paypalRendered) {
+          window.paypal.Buttons({
+            style: { shape: 'rect', color: 'gold', layout: 'vertical', label: 'subscribe' },
+            createSubscription: function (data, actions) {
+              return actions.subscription.create({ plan_id: 'P-4FD24238VX4902214NK2XP2Y', quantity: 1 });
+            },
+            onApprove: function (data) {
+              var el = embeds.querySelector('.paypal-fallback');
+              if (el) { el.textContent = 'Subscription active · ID ' + data.subscriptionID; el.classList.add('success-message'); }
+            }
+          }).render('#paypal-button-container-P-4FD24238VX4902214NK2XP2Y');
+          embeds.dataset.paypalRendered = 'true';
+        }
+      }
+      function denyPayments() {
+        var message = document.getElementById('ageGateMessage');
+        if (message) message.textContent = 'Payment options remain hidden.';
+      }
+      window.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('ageConfirmButton').addEventListener('click', showPayments);
+        document.getElementById('ageDenyButton').addEventListener('click', denyPayments);
+        try { if (sessionStorage.getItem('fedspa_age_verified') === '18-plus') showPayments(); } catch (e) {}
+      });
+      window.addEventListener('load', function () {
+        try { if (sessionStorage.getItem('fedspa_age_verified') === '18-plus') showPayments(); } catch (e) {}
+      });
+    }());
+  </script>
+  <script src="js/ui.js"></script><script src="js/search.js"></script><script src="js/crypto.js"></script><script src="js/app.js"></script><script src="js/experience.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+FED-SPA/admin_scripts/encrypt_unlicensed.js
+FED-SPA/admin_scripts/generate_public_files.py
+FED-SPA/admin_scripts/merge_and_encrypt.sh
+FED-SPA/admin_scripts/scrape_mqa.py
+FED-SPA/admin_scripts/validate_schema.py
+FED-SPA/data/meta/changelog.md
+FED-SPA/data/meta/raw/halo_mm41109.md
+FED-SPA/data/meta/schema.json
+FED-SPA/data/private/unlicensed.encrypted.json
+FED-SPA/data/private/unlicensed.plain.json
+FED-SPA/data/public/licensed.json
+FED-SPA/extension/background/alarms.js
+FED-SPA/extension/background/background.js
+FED-SPA/extension/content/content.css
+FED-SPA/extension/content/content.js
+FED-SPA/extension/manifest.json
+FED-SPA/extension/popup/popup.css
+FED-SPA/extension/popup/popup.html
+FED-SPA/extension/popup/popup.js
+FED-SPA/web/css/dark-theme.css
+FED-SPA/web/css/responsive.css
+FED-SPA/web/css/style.css
+FED-SPA/web/index.html
+FED-SPA/web/js/app.js
+FED-SPA/web/js/crypto.js
+FED-SPA/web/js/search.js
+FED-SPA/web/js/service-worker.js
+FED-SPA/web/js/ui.js
+FED-SPA/web/manifest.webmanifest
+FED-SPA/web/offline.html
+---COUNT---
+30
+---LOGO INFO---
+(1024, 1024) RGB
+(1536, 1024) RGB

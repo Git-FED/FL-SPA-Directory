@@ -1,0 +1,48 @@
+# FED-SPA Build Plan
+
+## Section 1: Setup
+- [x] Create this todo.md
+- [x] Create full directory skeleton
+- [x] Generate logo + social preview images
+- [x] Install icon tooling (Pillow)
+
+## Section 2: Data + Admin Scripts
+- [x] data/public/licensed.json (Halo Asian Spa seed entry)
+- [x] data/meta/schema.json, changelog.md, raw/
+- [x] data/private/unlicensed.plain.json + unlicensed.encrypted.json placeholders
+- [x] admin_scripts: scrape_mqa.py, encrypt_unlicensed.js, validate_schema.py, generate_public_files.py, merge_and_encrypt.sh
+
+## Section 3: Web PWA
+- [x] index.html, offline.html, manifest.webmanifest
+- [x] css: style.css, dark-theme.css, responsive.css
+- [x] js: app.js, crypto.js, search.js, ui.js, service-worker.js
+- [x] web icons (from generated logo)
+
+## Section 4: Browser Extension
+- [x] manifest.json
+- [x] popup (html/css/js)
+- [x] background (background.js, alarms.js)
+- [x] content (content.js, content.css)
+- [x] options (html/css/js)
+- [x] extension icons (16/32/48/128)
+- [x] bundled data copies (via generate_public_files.py)
+
+## Section 5: Android / Auto / Wear
+- [x] android skeleton (gradle, manifest, 7 Kotlin files, res, mipmap icons)
+- [x] android_auto skeleton
+- [x] watch skeleton
+
+## Section 6: iOS
+- [x] SwiftUI sources, Resources, README
+
+## Section 7: Community + Docs
+- [x] .github (build.yml, issue templates, PR template, discussion welcome)
+- [x] docs/ (4 files), wiki/ (6 pages), discussion/ (welcome.md), prompts/ (5 + README)
+- [x] All root files (README w/ Ko-fi, LICENSE, 27 other md files, styles.css)
+- [x] .gitignore, social-image.png (social-image.png via generate_icons.py; root file set complete incl. root template copies)
+
+## Section 8: Verify + Package
+- [x] Copy shared data into extension/android/auto/watch/ios asset folders (10 files across 6 destinations, verified: licensed-only for auto/watch, verified_by stripped everywhere, hash-stable)
+- [x] Run schema validation script (validate_schema.py passes: 1 licensed, 0 unlicensed, exit 0)
+- [x] Verify full tree (28 XML OK, 19 JSON OK, 11 JS node --check OK, 263 internal links OK, CI smoke block runs green locally, crypto round-trip + wrong-code rejection proven, build.yml flagged lines confirmed false positive)
+- [x] Zip repo, attach deliverables (fedspa-src.zip, 179 files, plaintext excluded, mirrors CI packaging step)

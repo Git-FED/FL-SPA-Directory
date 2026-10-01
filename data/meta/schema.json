@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FED-SPA Data Schemas",
+  "description": "Schemas for the public licensed list and the subscriber-only unlicensed list. Used by admin_scripts/validate_schema.py.",
+  "definitions": {
+    "address": {
+      "type": "object",
+      "required": ["street", "city", "state", "zip"],
+      "properties": {
+        "street": { "type": "string", "minLength": 1 },
+        "street2": { "type": ["string", "null"] },
+        "city": { "type": "string", "minLength": 1 },
+        "state": { "type": "string", "enum": ["FL", "fl"] },
+        "zip": { "type": "string", "pattern": "^[0-9]{5}(-[0-9]{4})?$" }
+      }
+    },
+    "licensed_parlor": {
+      "type": "object",
+      "required": [
+        "license_number",
+        "business_name",
+        "profession",
+        "status",
+        "expiration_date",
+        "original_issue_date",
+        "address",
+        "county",
+        "discipline_on_file",
+        "public_complaint",
+        "data_as_of",
+        "last_checked"
+      ],
+      "properties": {
+        "license_number": {
+          "type": "string",
+          "pattern": "^MA[0-9]{6}$",
+          "description": "Florida massage establishment license, e.g. MA123456 / MM41109 legacy format"
+        },
+        "business_name": { "type": "string", "minLength": 1 },
+        "profession": { "type": "string", "const": "Massage Establishment" },
+        "status": { "type": "string", "enum": ["Clear", "Active", "Delinquent", "Expired", "Inactive", "Probation"] },
+        "expiration_date": { "type": "string", "format": "date" },
+        "original_issue_date": { "type": "string", "format": "date" },
+        "address": { "$ref": "#/definitions/address" },
+        "county": { "type": "string" },
+        "discipline_on_file": { "type": "boolean" },
+        "public_complaint": { "type": "boolean" },
+        "data_as_of": { "type": "string", "format": "date" },
+        "last_checked": { "type": "string", "format": "date" },
+        "verified_by": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "unlicensed_parlor": {
+      "type": "object",
+      "required": ["business_name", "address", "status", "last_checked", "reason"],
+      "properties": {
+        "business_name": { "type": "string", "minLength": 1 },
+        "address": { "$ref": "#/definitions/address" },
+        "status": {
+          "type": "string",
+          "enum": ["no_license_found", "expired", "inactive", "revoked", "delinquent"],
+          "description": "no_license_found = absent from the DOH database entirely"
+        },
+        "license_number_last_known": {
+          "type": ["string", "null"],
+          "description": "Former license number if the business previously held one"
+        },
+        "reason": { "type": "string", "description": "Short human-readable explanation of the finding" },
+        "last_checked": { "type": "string", "format": "date" },
+        "source": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "licensed_list": {
+    "type": "object",
+    "required": ["version", "as_of", "source", "source_url", "parlors"],
+    "properties": {
+      "version": { "type": "integer", "minimum": 1 },
+      "as_of": { "type": "string", "format": "date" },
+      "source": { "type": "string" },
+      "source_url": { "type": "string" },
+      "update_frequency": { "type": "string" },
+      "parlors": {
+        "type": "array",
+        "items": { "$ref": "#/definitions/licensed_parlor" },
+        "uniqueItems": true
+      }
+    }
+  },
+  "unlicensed_list": {
+    "type": "object",
+    "required": ["version", "as_of", "parlors"],
+    "properties": {
+      "version": { "type": "integer", "minimum": 1 },
+      "as_of": { "type": "string", "format": "date" },
+      "parlors": {
+        "type": "array",
+        "items": { "$ref": "#/definitions/unlicensed_parlor" },
+        "uniqueItems": true
+      }
+    }
+  }
+}

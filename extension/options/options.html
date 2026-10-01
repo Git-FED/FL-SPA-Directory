@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FED-SPA Options</title>
+  <link rel="stylesheet" href="options.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+  <main class="options-page">
+
+    <header class="options-header">
+      <img src="../icons/icon-48.png" alt="FED-SPA logo" width="40" height="40">
+      <div>
+        <h1>FED-SPA Options</h1>
+        <p class="sub">Florida Establishment Directory &mdash; Spa &amp; Parlor Assurance</p>
+      </div>
+    </header>
+
+    <!-- ============================================================
+         Data status
+         ============================================================ -->
+    <section class="card">
+      <h2>Data status</h2>
+      <div class="kv-grid">
+        <div class="kv">
+          <span class="kv-key">Licensed establishments</span>
+          <span class="kv-val" id="licCount">&mdash;</span>
+        </div>
+        <div class="kv">
+          <span class="kv-key">Data as of</span>
+          <span class="kv-val" id="asOf">&mdash;</span>
+        </div>
+        <div class="kv">
+          <span class="kv-key">Data version</span>
+          <span class="kv-val" id="version">&mdash;</span>
+        </div>
+        <div class="kv">
+          <span class="kv-key">Update frequency</span>
+          <span class="kv-val">Annual</span>
+        </div>
+      </div>
+      <p class="hint">
+        The bundled dataset is refreshed once a year. When a new data file
+        replaces <code>data/licensed.json</code> inside the extension package,
+        these values update automatically after the next browser restart.
+      </p>
+    </section>
+
+    <!-- ============================================================
+         Subscriber code handling
+         ============================================================ -->
+    <section class="card">
+      <h2>Subscriber code</h2>
+      <p class="card-desc">
+        The unlicensed watchlist is encrypted. Subscribers receive a code that
+        decrypts it inside the browser &mdash; the code is never sent anywhere,
+        because FED-SPA has no backend.
+      </p>
+
+      <label class="check-row" for="rememberCode">
+        <input type="checkbox" id="rememberCode">
+        <span class="check-text">
+          <strong>Remember my code</strong><br>
+          <small>
+            Stores the code in <code>chrome.storage.local</code> so the popup
+            and the MQA portal page enhancer can unlock the watchlist
+            automatically. Uncheck and save to wipe it immediately.
+          </small>
+        </span>
+      </label>
+
+      <div class="field-row">
+        <label for="codeInput">Subscriber code</label>
+        <input type="password" id="codeInput" placeholder="Paste your subscriber code" autocomplete="off" spellcheck="false">
+      </div>
+
+      <div class="btn-row">
+        <button type="button" id="saveBtn" class="btn primary">Save settings</button>
+        <button type="button" id="clearBtn" class="btn danger">Clear stored code</button>
+      </div>
+
+      <p class="status" id="statusMsg" role="status"></p>
+
+      <p class="hint warn">
+        <strong>Heads-up:</strong> anything stored in
+        <code>chrome.storage.local</code> sits unencrypted on this machine.
+        Only enable this on a device you control. The stored code is scoped to
+        this extension's storage and never leaves the browser.
+      </p>
+    </section>
+
+    <!-- ============================================================
+         About
+         ============================================================ -->
+    <section class="card">
+      <h2>About &amp; verify it yourself</h2>
+      <p class="card-desc">
+        FED-SPA data is manually checked against the Florida DOH MQA search
+        portal. License status on this list is a snapshot, not a live feed
+        &mdash; always re-verify a specific license on the official portal
+        before relying on it.
+      </p>
+      <div class="btn-row">
+        <a class="btn" href="https://mqa-internet.doh.state.fl.us/MQASearchServices/HealthCareProviders" target="_blank" rel="noopener noreferrer">Open MQA portal</a>
+        <a class="btn" href="https://github.com/YOUR_USERNAME/FED-SPA" target="_blank" rel="noopener noreferrer">Project repository</a>
+      </div>
+    </section>
+
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FED-SPA</title>
+  <link rel="stylesheet" href="popup.css" />
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+  <header class="head">
+    <img src="../icons/icon-32.png" alt="" width="24" height="24" />
+    <div class="head-text">
+      <h1>FED-SPA</h1>
+      <span id="dataAsOf" class="muted">data as of -</span>
+    </div>
+    <button id="optionsBtn" class="icon-btn" title="Options">&#9881;</button>
+  </header>
+
+  <div class="search">
+    <input id="searchInput" type="search" placeholder="Name, city, county, license #" autocomplete="off" />
+    <select id="statusFilter" aria-label="Status filter">
+      <option value="all">All</option>
+      <option>Clear</option>
+      <option>Active</option>
+      <option>Delinquent</option>
+      <option>Expired</option>
+      <option>Inactive</option>
+      <option>Probation</option>
+    </select>
+  </div>
+
+  <div id="tierTabs" class="tabs" hidden>
+    <button id="tabLicensed" class="tab active" type="button">Licensed</button>
+    <button id="tabUnlicensed" class="tab" type="button">Unlicensed <span class="lock">&#128274;</span></button>
+  </div>
+
+  <ul id="parlorList" class="list" aria-live="polite"></ul>
+
+  <div id="unlockBox" class="unlock" hidden>
+    <input id="passwordInput" type="password" placeholder="Subscriber access code" autocomplete="off" />
+    <button id="unlockBtn" type="button">Unlock</button>
+    <p id="unlockMsg" class="muted xsmall"></p>
+  </div>
+
+  <p id="emptyMsg" class="empty muted">Loading&hellip;</p>
+
+  <footer class="foot">
+    <a href='https://ko-fi.com/YOUR_USERNAME' target='_blank' rel='noopener noreferrer'>
+      <img height='28' style='border:0px;height:28px;' src='https://ko-fi.com/img/githubbutton_sm.svg' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+    </a>
+    <span class="muted xsmall">FL DOH MQA data &middot; annual refresh</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

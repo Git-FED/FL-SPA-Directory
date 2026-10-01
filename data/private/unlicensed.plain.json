@@ -1,0 +1,710 @@
+{
+  "version": 2,
+  "as_of": "2026-09-11",
+  "parlors": [
+    {
+      "business_name": "J's Foot Spa",
+      "address": {
+        "street": "1152 SE Port St Lucie Blvd",
+        "street2": null,
+        "city": "Port St. Lucie",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "revoked",
+      "license_number_last_known": "MM37875",
+      "reason": "License REVOKED by the Florida Board of Massage Therapy. | DBA 'J'S Foot Spa' operates under Kang Run Foot Massage Corp. License revoked (discipline case #202234040).",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (772) 722-0175"
+    },
+    {
+      "business_name": "Massage With Dahlia",
+      "address": {
+        "street": "1626 SW Bayshore Blvd",
+        "street2": null,
+        "city": "Port St. Lucie",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No records found under 'Massage With Dahlia'.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 633-7034"
+    },
+    {
+      "business_name": "Hand & Stone Massage and Facial Spa",
+      "address": {
+        "street": "10532 SW Vlg Pkwy",
+        "street2": null,
+        "city": "Port St. Lucie",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | Statewide search for 'Hand & Stone Massage and Facial Spa' confirms no St. Lucie County records exist under this name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (772) 303-1030"
+    },
+    {
+      "business_name": "Massage Envy",
+      "address": {
+        "street": "1707 St Lucie W Blvd #146",
+        "street2": null,
+        "city": "Port St. Lucie",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "inactive",
+      "license_number_last_known": "MM30177",
+      "reason": "License voluntarily relinquished. | Licensed as 'NV of PSL' DBA 'Massage Envy St Lucie West' - matches this St Lucie West location by name. License voluntarily relinquished, expired 8/31/2023; no active successor license found.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (772) 344-0222"
+    },
+    {
+      "business_name": "Hand & Stone Massage and Facial Spa (9144 S Federal Hwy, East Port, at Walton Rd)",
+      "address": {
+        "street": "9144 S Federal Hwy, East Port, at Walton Rd",
+        "street2": null,
+        "city": "Port St. Lucie",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | Statewide search for 'Hand & Stone Massage and Facial Spa' confirms no St. Lucie County records exist under this name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (772) 732-8797"
+    },
+    {
+      "business_name": "Therapeutic Touch",
+      "address": {
+        "street": "787 E Prima Vista Blvd",
+        "street2": null,
+        "city": "Port St. Lucie",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | Statewide search for 'Therapeutic Touch' returned numerous results (Lantana, Miami, Davie, Ocala, etc.) but none in Port St Lucie. No confirmed match for this address.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (772) 340-0799"
+    },
+    {
+      "business_name": "QQ Spa",
+      "address": {
+        "street": "880 SW Martin Downs Blvd",
+        "street2": null,
+        "city": "Palm City",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "expired",
+      "license_number_last_known": "MM39158",
+      "reason": "License NULL AND VOID (no longer valid). | Matched as 'QQ spa of Stuart LLC' (Palm City) - Null And Void since 2021. No current active license found for this address. Unrelated 'QQ' entities in Middleburg also void/relinquished.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (772) 342-7232"
+    },
+    {
+      "business_name": "Kim's Massage Therapy",
+      "address": {
+        "street": "11960 SE Federal Hwy, SE Neptune St Ste B",
+        "street2": null,
+        "city": "Hobe Sound",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No records found under \"Kim's Massage Therapy\".",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 222-9080"
+    },
+    {
+      "business_name": "11585 Bamboo Massage&Spa",
+      "address": {
+        "street": "11585 US-1 Unit 305",
+        "street2": null,
+        "city": "North Palm Beach / Lake Park",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "expired",
+      "license_number_last_known": "MM38251",
+      "reason": "License NULL AND VOID (no longer valid). | All Bamboo-named massage establishments are void or relinquished: MM29677 BAMBOO MASSAGE SPA (US Highway One Suite) Null And Void; MM30137 BAMBOO MASSAGE CENTER INC (Tallahassee) Null And Void; MM33858 BAMBOO MASSAGE & SPA INC. (North Palm Beach) Null And Void; MM38251 BAMBOO MASSAGE & SPA INC., DBA BAMBOO FOOT SPA (North Palm Beach) Null And Void. MM40137 BAMBOO WELLNESS LLC (Clearwater) is Clear but unrelated. | License history: Predecessors: MM29677, MM30137, MM33858, MM38251 - all Null And Void.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 622-2388"
+    },
+    {
+      "business_name": "Sunny Spa and Massage (Hua Spa)",
+      "address": {
+        "street": "450 Northlake Blvd Ste 1",
+        "street2": null,
+        "city": "North Palm Beach / Lake Park",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No DOH record matches 450 Northlake Blvd Ste 1. Statewide Sunny Spa search returned many entities: MM34727 (Orlando) Clear; MM42229 Twisted Palm Group (Saint Augustine) Clear; MM44340 Sunny spa nmb (Orlando) Clear; MM47153 Twisted Palm Group (Tallahassee) Clear; MM34567 JUNPING HAO (St. Augustine) Vol Relinquish; MM34323 MING BLOOM (St Augustine) Null And Void; MM32093 (Boca Raton) Null And Void; MM36248 (Lake Park) Null And Void; MM37567 (Saint Augustine) Null And Void; MM38203 (Lake Park) Null And Void; MM40154 (Orange Park) Revoked; MM33588 (Boca Raton) Revoked. None is confirmed at this address.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 814-5480"
+    },
+    {
+      "business_name": "Oriental Massage & Spa",
+      "address": {
+        "street": "2800 N Military Trl #107",
+        "street2": null,
+        "city": "West Palm Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": "MM18915; MM24297; MM30299",
+      "reason": "Same-named licenses exist but none can be address-confirmed. | Three 'Oriental Massage & Spa' entities found in West Palm Beach: MM18915 (Revoked), MM24297 (Null And Void), MM30299 (Null And Void). None have an address on file to confirm this specific 2800 N Military Trail location. Needs further verification. | Sweep status: Three same-named entities exist in West Palm Beach; none list an address on file matching 2800 N Military Trail. MM18915 has a confirmed revocation but cannot be tied to this specific address without further verification (e.g. Sunbiz). Do not classify as RED without address confirmation.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 697-8588"
+    },
+    {
+      "business_name": "Chi Spa",
+      "address": {
+        "street": "10300 Forest Hill Blvd #230",
+        "street2": null,
+        "city": "Greenacres / Wellington / Lake Worth Rd corridor",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No DOH record matches 10300 Forest Hill Blvd #230. Statewide Chi-named massage establishments: MM26052 CHI SPA, INC. (Wilton Manors) Clear; MM29420 CHI 4 LIFE, LLC (Pembroke Pines) Null And Void; MM39394 O CHI REFLEXOLOGY LLC (Orlando) Null And Void. None has an address matching this location.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 345-6647"
+    },
+    {
+      "business_name": "Anne Spa",
+      "address": {
+        "street": "5829 A-B Lake Worth Rd",
+        "street2": null,
+        "city": "Greenacres / Wellington / Lake Worth Rd corridor",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "revoked",
+      "license_number_last_known": "MM33472",
+      "reason": "License REVOKED by the Florida Board of Massage Therapy. | DBA ANNE SPA under RAINBOW VICK INC. License MM33472 REVOKED \u2014 Case 201625904, complaint AC Filed. Related MM33710 ANNE SPA INC (Greenacres) is Disc Relinquish \u2014 Case 201609569 Voluntary Surrender, complaints AC Filed (x2). No active license at this address. | License history: Related: MM33710 ANNE SPA INC (Greenacres) - Disc Relinquish (Case 201609569, Voluntary Surrender).",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 508-7925"
+    },
+    {
+      "business_name": "Silk Spa",
+      "address": {
+        "street": "4550 Lantana Rd A4",
+        "street2": null,
+        "city": "Greenacres / Wellington / Lake Worth Rd corridor",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | Only Silk-named DOH record is EP707 SILK SPA LLC \u2014 an Electrolysis Facility, Null And Void since 2008. No massage establishment license found for 4550 Lantana Rd A4.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 698-0596"
+    },
+    {
+      "business_name": "Tranquil massage",
+      "address": {
+        "street": "4640 Hypoluxo Rd #2",
+        "street2": null,
+        "city": "Greenacres / Wellington / Lake Worth Rd corridor",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "expired",
+      "license_number_last_known": "MM34253",
+      "reason": "License NULL AND VOID (no longer valid). | MM34253 TRANQUIL MASSAGE is Null And Void (expired 8/31/2017). No active license found at this address.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 908-4943"
+    },
+    {
+      "business_name": "DuoDuo Spa",
+      "address": {
+        "street": "4895 Windward Passage Dr #9",
+        "street2": null,
+        "city": "Greenacres / Wellington / Lake Worth Rd corridor",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "expired",
+      "license_number_last_known": "MM40923",
+      "reason": "License NULL AND VOID (no longer valid). | Two void/relinquished licenses tied to this brand in Boynton Beach: MM35588 Duoduo Spa Inc \u2014 Vol Relinquish (exp 8/31/2019); MM40923 HEALTH CENTER OF PB LLC, DBA DUODUO SPA \u2014 Null And Void (exp 8/31/2021). No active license. | License history: Predecessor: MM35588 Duoduo Spa Inc (Boynton Beach) - Vol Relinquish.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 413-3712"
+    },
+    {
+      "business_name": "Aloha Massage",
+      "address": {
+        "street": "410 N A St",
+        "street2": null,
+        "city": "Lake Worth Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | Search for 'Aloha Massage' returned 3 results; none in Lake Worth Beach (2x Winter Park, 1x Palm Coast - all Null And Void). No license found for this address/city - verify name or possible unlicensed operation.",
+      "last_checked": "2026-09-10",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 254-2040"
+    },
+    {
+      "business_name": "Beach life SPA",
+      "address": {
+        "street": "328 N Dixie Hwy",
+        "street2": null,
+        "city": "Lake Worth Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No records found under 'Beach life SPA'. Related entities found: Beach Life Wellness Institute LLC (Nokomis, Clear) and Beach Life Massage LLC (Ormond Beach, Null And Void) - neither matches this location.",
+      "last_checked": "2026-09-10",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 229-9028"
+    },
+    {
+      "business_name": "Cshells Mobile Massage",
+      "address": {
+        "street": "521 Lake Ave #1",
+        "street2": null,
+        "city": "Lake Worth Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No records found under 'Cshells Mobile Massage'. Note: listed as temporarily closed.",
+      "last_checked": "2026-09-10",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (631) 680-0293"
+    },
+    {
+      "business_name": "Okinawa Spa",
+      "address": {
+        "street": "768 S Congress Ave",
+        "street2": null,
+        "city": "Lake Worth Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "expired",
+      "license_number_last_known": "MM34118",
+      "reason": "License NULL AND VOID (no longer valid). | License Null And Void since 2017 (expired 8/31/2017). Confirm current business/operating status via Sunbiz before removing from monitoring.",
+      "last_checked": "2026-09-10",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 929-3198"
+    },
+    {
+      "business_name": "Green Massage",
+      "address": {
+        "street": "4787 N Congress Ave",
+        "street2": null,
+        "city": "Boynton Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "expired",
+      "license_number_last_known": "MM41530",
+      "reason": "License NULL AND VOID (no longer valid). | Not active. Ownership/DBA continuity with the other GREEN MASSAGE entities should be checked via Sunbiz before treating any Green Massage location as clean. | Sweep status: License Null And Void (expired 08/31/2023). Multiple related GREEN MASSAGE licenses are void/relinquished - see AM. | License history: Related GREEN MASSAGE licenses from FL DOH name search (9/9/2026), logged as appended rows: MM39895 GREEN MASSAGE (Fort Walton Beach) Null And Void; MM41130 Green Massage Inc (Pompano Beach) Vol Relinquish; MM42448 Green Massage Inc (Ormond Beach) Disc Relinquish; MM42946 415LL INC (Ocala) Clear; MM42971 Shun Feng Corporation (Boynton Beach) Vol Relinquish; MM43835 Green Massage of Plantation (Plantation) Clear; MM44166 GREEN MASSAGE NOVA, LLC (Ormond Beach) Null And Void.",
+      "last_checked": "2026-09-09",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 886-7897"
+    },
+    {
+      "business_name": "TOKYO FOOT SPA",
+      "address": {
+        "street": "10833 Jog Rd #184",
+        "street2": null,
+        "city": "Boynton Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "expired",
+      "license_number_last_known": "MM34538",
+      "reason": "License NULL AND VOID (no longer valid). | Not active; expired 2017. | Sweep status: License Null And Void (expired 08/31/2017). | License history: Also returned in the same FL DOH name search: MM37012 Element Therapeutic Zone inc (Boynton Beach) Null And Void; MM45534 ZHANG CORPORATION (Boynton Beach) Clear - logged as appended rows.",
+      "last_checked": "2026-09-09",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 742-8203"
+    },
+    {
+      "business_name": "Starry Spa-Next to Subway",
+      "address": {
+        "street": "706 Boynton Beach Blvd Ste 111",
+        "street2": null,
+        "city": "Boynton Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "expired",
+      "license_number_last_known": "MM41729",
+      "reason": "License NULL AND VOID (no longer valid). | Not active; two void licenses belong to this location. | Sweep status: License Null And Void (expired 08/31/2025). Predecessor MM38470 also Null And Void. | License history: Predecessor: MM38470 STARRY SPA LLC (Boynton Beach) - Null And Void (logged as appended row).",
+      "last_checked": "2026-09-09",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 739-3389"
+    },
+    {
+      "business_name": "Bamboo Spa",
+      "address": {
+        "street": "2911 S Congress Ave",
+        "street2": null,
+        "city": "Delray Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | Search for 'Bamboo Spa' returned 4 results; none matched Delray Beach (Jacksonville-Null And Void, Tampa-Clear, Palm Springs-Vol Relinquish, North Palm Beach-Clear). No Delray Beach match found.",
+      "last_checked": "2026-09-10",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 475-6660"
+    },
+    {
+      "business_name": "Buddha Spa",
+      "address": {
+        "street": "71 SE 1st Ave",
+        "street2": null,
+        "city": "Delray Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No records found under 'Buddha Spa' for Delray Beach. Other Buddha-named establishments found in Boca Raton (Buddha Mind Spa LLC-Closed, Buddha Wellness LLC-Clear) and Punta Gorda (Buddhaful LLC-Clear); none match this location.",
+      "last_checked": "2026-09-10",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 807-6818"
+    },
+    {
+      "business_name": "Sands Spa- Delray Beach",
+      "address": {
+        "street": "14590 S Military Trl E6, Delray Beach, FL 33484",
+        "street2": null,
+        "city": "Delray Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No records found under 'Sands Spa- Delray Beach'.",
+      "last_checked": "2026-09-10",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 783-7777"
+    },
+    {
+      "business_name": "Atha Spa",
+      "address": {
+        "street": "215 NE 22nd St, Delray Beach, FL 33444",
+        "street2": null,
+        "city": "Delray Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No records found under 'Atha Spa'.",
+      "last_checked": "2026-09-10",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 857-1158"
+    },
+    {
+      "business_name": "Empire Massage and Spa",
+      "address": {
+        "street": "2539 N Dixie Hwy",
+        "street2": null,
+        "city": "Boca Raton",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "inactive",
+      "license_number_last_known": "MM34856",
+      "reason": "DOH license status: Closed. | Matched by name: Empire Massage Inc, DBA 'Empire Day Spa'. DOH status: Closed. No address on file to confirm match with 2539 N Dixie Hwy - verify via Sunbiz.",
+      "last_checked": "2026-09-10",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 727-8884"
+    },
+    {
+      "business_name": "Premier Massage SPA",
+      "address": {
+        "street": "1800 N Federal Hwy 108 Ste 108",
+        "street2": null,
+        "city": "Boca Raton",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No exact name match found. Closest result 'Premier Massage and Injury Clinic' (MM24150) is Null And Void since 2013 with no address on file - likely a different/unrelated entity. Recommend re-searching with alternate terms or confirming exact business name.",
+      "last_checked": "2026-09-10",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (954) 960-2778"
+    },
+    {
+      "business_name": "Oriental Massage & Spa (5140 Coconut Creek Pkwy)",
+      "address": {
+        "street": "5140 Coconut Creek Pkwy",
+        "street2": null,
+        "city": "Coconut Creek",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | Statewide DOH search for 'Oriental Massage & Spa' returned no Coconut Creek match (existing licenses under this/similar names found only in West Palm Beach, Hollywood, and Saint Augustine).",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (954) 532-1408"
+    },
+    {
+      "business_name": "Allure Massage",
+      "address": {
+        "street": "5410 W Atlantic Blvd",
+        "street2": null,
+        "city": "Margate",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "revoked",
+      "license_number_last_known": "MM28176",
+      "reason": "License REVOKED by the Florida Board of Massage Therapy. | DBA 'Allure Massage of Margate' matches city and name exactly. License revoked 2025 (discipline case #202334985). Related Pompano Beach entities (MM21106, MM24071) also Null And Void / Disc Relinquish.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (954) 972-7770"
+    },
+    {
+      "business_name": "Oriental Massage",
+      "address": {
+        "street": "4996B W Atlantic Blvd",
+        "street2": null,
+        "city": "Margate",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "inactive",
+      "license_number_last_known": "MM20677",
+      "reason": "License voluntarily relinquished. | Matched via statewide list (Name: Oriental Massage, City: Margate) - Vol Relinquish. No detail page available for expiration/issue dates.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (954) 968-8598"
+    },
+    {
+      "business_name": "WYSP Skin Studio (formerly Faces by Aida)",
+      "address": {
+        "street": "2701 N Hiatus Rd",
+        "street2": null,
+        "city": "Sunrise",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No matching DOH massage establishment license found under this business name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (754) 777-7380"
+    },
+    {
+      "business_name": "Wellness Weston Spa & Salon",
+      "address": {
+        "street": "1348 SW 160th Ave, Sunrise, FL 33326",
+        "street2": null,
+        "city": "Sunrise",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No matching DOH massage establishment license found under this business name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (954) 652-1343"
+    },
+    {
+      "business_name": "Bodywork by Bina - Miami",
+      "address": {
+        "street": "3081 Salzedo St Ste 202",
+        "street2": null,
+        "city": "Coral Gables",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No matching DOH massage establishment license found under this business name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (213) 709-4042"
+    },
+    {
+      "business_name": "Nexus Head Spa",
+      "address": {
+        "street": "1017 N State Rd 7, Royal Palm Beach, FL 33411",
+        "street2": null,
+        "city": "Royal Palm Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No matching DOH massage establishment license found under this business name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (305) 776-1646"
+    },
+    {
+      "business_name": "Caribbean mobile spa",
+      "address": {
+        "street": "1017 N State Rd 7 Ste 101, Royal Palm Beach, FL 33411",
+        "street2": null,
+        "city": "Royal Palm Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No matching DOH massage establishment license found under this business name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (561) 300-0812"
+    },
+    {
+      "business_name": "The Sage HeadSpa - Palm Beach Gardens",
+      "address": {
+        "street": "11940 US-1 Suite 205, North Palm Beach, FL 33408",
+        "street2": null,
+        "city": "North Palm Beach",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No matching DOH massage establishment license found under this business name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (770) 561-7128"
+    },
+    {
+      "business_name": "Flourished Luxury Spa | The Flourished Garden",
+      "address": {
+        "street": "4000 N State Rd 7, Lauderdale Lakes, FL 33319",
+        "street2": null,
+        "city": "Lauderdale Lakes",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No matching DOH massage establishment license found under this business name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (305) 349-3647"
+    },
+    {
+      "business_name": "LAVA Head Spa",
+      "address": {
+        "street": "10531 S Dixie Hwy, Pinecrest, FL 33156",
+        "street2": null,
+        "city": "Pinecrest",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No matching DOH massage establishment license found under this business name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (786) 758-4346"
+    },
+    {
+      "business_name": "New Asian Massage",
+      "address": {
+        "street": "19770 S Dixie Hwy, Cutler Bay, FL 33157",
+        "street2": null,
+        "city": "Cutler Bay",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | Statewide DOH search for 'New Asian Massage' returned no Cutler Bay match (existing licenses under this name found in Miami, North Miami Beach, Deerfield Beach, Naples, Sarasota, Gainesville, and Fort Walton Beach).",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (786) 732-0816"
+    },
+    {
+      "business_name": "Cathartic Massage",
+      "address": {
+        "street": "1005 Kane Concourse, E Bay Harbor Dr, Bay Harbor Islands, FL 33154",
+        "street2": null,
+        "city": "Bay Harbor Islands",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No matching DOH massage establishment license found under this business name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (786) 292-7551"
+    },
+    {
+      "business_name": "Body+Beauty Lab",
+      "address": {
+        "street": "1000 Kane Concourse Suite 4, Bay Harbor Islands, FL 33154",
+        "street2": null,
+        "city": "Bay Harbor Islands",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No matching DOH massage establishment license found under this business name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (786) 796-7365"
+    },
+    {
+      "business_name": "Urban Luxe Aesthetics",
+      "address": {
+        "street": "14929 NW 22nd Ave Ste 1, Opa-locka, FL 33054",
+        "street2": null,
+        "city": "Opa-locka",
+        "state": "FL",
+        "zip": null
+      },
+      "status": "no_license_found",
+      "license_number_last_known": null,
+      "reason": "No matching license found in the DOH database. | No matching DOH massage establishment license found under this business name.",
+      "last_checked": "2026-09-11",
+      "source": "FL DOH License Verification (mqa-internet.doh.state.fl.us)",
+      "notes": "Phone: (786) 440-8748"
+    }
+  ]
+}

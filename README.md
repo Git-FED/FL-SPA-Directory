@@ -1,4 +1,4 @@
-# FED-SPA
+# FED-SPA Florida Establishment Directory
 
 <img width="2560" height="1440" alt="fed-spa-detective-02-evidence-wall" src="https://github.com/user-attachments/assets/c5745f27-7325-4b38-b357-f88f22dd9105" />
 

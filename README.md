@@ -1,5 +1,7 @@
 # FED-SPA Florida Establishment Directory
 
+<img width="896" height="504" alt="fed-spa-large" src="https://github.com/user-attachments/assets/761bc599-5d31-4bb2-b64b-f29198e29eab" />
+
 <img width="2560" height="1440" alt="fed-spa-detective-02-evidence-wall" src="https://github.com/user-attachments/assets/c5745f27-7325-4b38-b357-f88f22dd9105" />
 
 **Florida Establishment Directory — Spa & Parlor Assurance**
